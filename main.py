@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return 'Hello from App Engine!'
+    return 'Hello from App Engine! This is a Version 2 of the app.'
 
 @app.route('/health')
 def health():
