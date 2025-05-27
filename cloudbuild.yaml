@@ -14,4 +14,4 @@ timeout: '1200s'
 options:
   logging: CLOUD_LOGGING_ONLY
 
-run: pip install --upgrade pip
+RUN pip install --upgrade pip
