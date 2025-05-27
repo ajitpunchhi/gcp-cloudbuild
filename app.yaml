@@ -1,0 +1,9 @@
+runtime: python39
+service: default
+
+automatic_scaling:
+  min_instances: 0
+  max_instances: 10
+
+env_variables:
+  ENV: production

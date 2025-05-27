@@ -1,0 +1,12 @@
+steps:
+  # Install dependencies
+  - name: 'python:3.9'
+    entrypoint: 'pip'
+    args: ['install', '-r', 'requirements.txt']
+    
+  # Deploy to App Engine
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['app', 'deploy', 'app.yaml', '--quiet']
+
+# Timeout for deployment
+timeout: '1200s'
