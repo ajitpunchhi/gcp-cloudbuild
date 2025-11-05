@@ -1,4 +1,4 @@
-runtime: python39
+runtime: python313
 service: default
 
 automatic_scaling:
